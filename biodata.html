@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-data</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: #333;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #4facfe;
+        }
+        .navbar .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+        .navbar .nav-links li {
+            display: inline;
+        }
+        .navbar .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .navbar .nav-links a:hover, .navbar .nav-links .active a {
+            color: #4facfe;
+        }
+        .mode-toggle {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        .content-section {
+            padding: 4rem 2rem;
+            background: #f9f9f9;
+        }
+        .content-section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #4facfe;
+        }
+        .bio-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .bio-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .bio-card li {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            color: #333;
+        }
+        .bio-card strong {
+            color: #4facfe;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">.</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li class="active"><a href="biodata.html">Bio-data</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="mode-toggle">☀</button>
+    </nav>
+
+    <!-- Bio-data Section -->
+    <section class="content-section">
+        <div class="container">
+            <h2>Bio-data</h2>
+            <div class="bio-card">
+                <ul>
+                    <li><strong>Name:</strong> Sohan K</li>
+                    <li><strong>Age:</strong> 20</li>
+                    <li><strong>Father's Name:</strong> Rajesh Shet</li>
+                    <li><strong>Mother's Name:</strong> Shobha Shet</li>
+                    <li><strong>Email:</strong> sohangowdak1@gmail.com</li>
+                    <li><strong>School:</strong> Shri Marikamba High School</li>
+                    <li><strong>Pre-University College:</strong> Chaitanya PU College</li>
+                    <li><strong>Degree College:</strong> JSSATEB</li>
+                    <li><strong>Course:</strong> Computer Science and Engineering</li>
+                    <li><strong>Location:</strong> Sirsi-581403</li>
+                    <li><strong>Hobbies:</strong> Coding, Playing Cricket, Reading Books, Music, Watching Movies</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [Sohan K]. All rights reserved.</p>
+    </footer>
+</body>
+</html>
